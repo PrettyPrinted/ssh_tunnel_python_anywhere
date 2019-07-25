@@ -7,7 +7,7 @@ app = Flask(__name__)
 if __name__ == '__main__':
 
     tunnel = sshtunnel.SSHTunnelForwarder(
-        ('ssh.pythonanyhwere.com'), ssh_username='yourusername', 'ssh_password'='yourpythonanywherepassword',
+        ('ssh.pythonanyhwere.com'), ssh_username='yourusername', ssh_password='yourpythonanywherepassword',
         remote_bind_address=('yourusername.mysql.pythonanywhere-services.com', 3306)
     )
 
